@@ -95,7 +95,7 @@ class App extends Component {
     const {historyList} = this.state
 
     const searchList = historyList.filter(each =>
-      each.title.toLowerCase().includes(event.target.value),
+      each.title.toLowerCase().includes(event.target.value.toLowerCase()),
     )
 
     this.setState({list: searchList})
